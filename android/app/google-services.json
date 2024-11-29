@@ -1,0 +1,29 @@
+{
+      "project_info": {
+            "project_number": "37262912414",
+            "project_id": "dkproduct-5655c",
+            "storage_bucket": "dkproduct-5655c.appspot.com"
+      },
+      "client": [
+            {
+                  "client_info": {
+                        "mobilesdk_app_id": "1:37262912414:android:4de72d9c398adeea46448f",
+                        "android_client_info": {
+                              "package_name": "com.dkproduct"
+                        }
+                  },
+                  "oauth_client": [],
+                  "api_key": [
+                        {
+                              "current_key": "AIzaSyCzmdfNjA80CDWtoi84GdDa1Clr4EUZlIA"
+                        }
+                  ],
+                  "services": {
+                        "appinvite_service": {
+                              "other_platform_oauth_client": []
+                        }
+                  }
+            }
+      ],
+      "configuration_version": "1"
+}
