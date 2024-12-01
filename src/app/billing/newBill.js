@@ -81,6 +81,7 @@ export default function NewBill(route) {
 
             try {
                   const response = await API.get('/user/orders/billing/pending');
+                  console.log("🚀 ~ fetchBillingOrder ~ response:", response.orders.length)
 
                   setNewOrderList(response.orders);
 
@@ -152,7 +153,7 @@ export default function NewBill(route) {
                                                 Submit
                                           </Button>
                                           <Button mode="outlined" onPress={() => setShowRejectionModel(false)} style={styles.modalButton}>
-                                                Cancel
+                                                Cancel 1666
                                           </Button>
                                     </View>
                               </Modal>

@@ -23,7 +23,8 @@ function PackagingTabs() {
             return roles.some(role => role.packaging === roleKey);
       };
 
-      const [newOrderList, setNewOrderList] = useState(0);
+      const [newOrderList, setNewOrderListBuget] = useState(0);
+      console.log("🚀 ~ PackagingTabs ~ newOrderList:", newOrderList)
 
       const [acceptedOrdxer, setAcceptedOrdxer] = useState(0);
 
@@ -31,7 +32,7 @@ function PackagingTabs() {
             try {
                   const response = await API.get('/user/orders/packaging/pending');
 
-                  setNewOrderList(response.orders.length);
+                  setNewOrderListBuget(response.orders.length);
             } catch (error) {
                   console.log('error ==>', error);
             } finally {
@@ -169,6 +170,8 @@ function PackagingTabs() {
                         <Tab.Screen
                               initialParams={{
                                     functions: {fetchAllFunction},
+                              setNewOrderListBuget: setNewOrderListBuget,
+
                               }}
                               name="New Order"
                               component={packagingNewOrder}

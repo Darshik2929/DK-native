@@ -10,7 +10,7 @@ import API from '../../api/API.js';
 import {useFocusEffect} from '@react-navigation/native';
 
 export default function PackagingNewOrder(route) {
-      const {functions} = route.route.params; // Destructure the passed function
+      const {functions, setNewOrderListBuget } = route.route.params; // Destructure the passed function
 
       const {notification} = useNotificationHandler();
 
@@ -53,7 +53,8 @@ export default function PackagingNewOrder(route) {
 
             try {
                   const response = await API.get('/user/orders/packaging/pending');
-
+                  console.log("🚀 ~ fetchPackagingOrder ~ response:", response)
+                  setNewOrderListBuget(response.orders.length)
                   setNewOrderList(response.orders);
 
                   functions();
@@ -74,7 +75,7 @@ export default function PackagingNewOrder(route) {
       );
 
       const cardActionButton = [
-            {label: 'Reject', handle: setShowRejectionModel},
+            {label: 'Reject 1155', handle: setShowRejectionModel},
             {label: 'Pending', handle: handleAccept},
             {label: 'Active', handle: handleStart},
       ];

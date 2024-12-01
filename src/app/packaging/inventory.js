@@ -116,15 +116,18 @@ export default function Inventory(route) {
                                                 <View
                                                       style={{
                                                             borderRadius: 10,
-                                                            width: 18,
-                                                            height: 15,
+                                                            top:-10,
+                                                            width: 25,
+                                                            height: 25,
                                                             backgroundColor: 'red',
                                                             color: 'white',
                                                             // borderRadius: 999,
                                                             marginLeft: 2,
                                                             paddingLeft: 2,
+                                                            justifyContent: 'center',
+                                                            alignItems: 'center',
                                                       }}>
-                                                      <Text style={{color: 'white', paddingLeft: 2}}>{digitPart}</Text>
+                                                      <Text style={{color: 'white',}}>{digitPart}</Text>
                                                 </View>
                                           )}
                                     </View>

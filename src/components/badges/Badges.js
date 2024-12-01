@@ -11,12 +11,12 @@ const Badge = ({count}) => {
             <View
                   style={{
                         position: 'absolute',
-                        right: -10,
-                        top: 0,
+                        right: -15,
+                        top: -10,
                         backgroundColor: 'red',
                         borderRadius: 10,
-                        width: 15,
-                        height: 15,
+                        width: 25,
+                        height: 25,
                         justifyContent: 'center',
                         alignItems: 'center',
                         zIndex: 1, // Make sure it stays on top

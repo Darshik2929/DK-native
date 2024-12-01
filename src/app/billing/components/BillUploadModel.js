@@ -288,13 +288,15 @@ export default function BillUploadModal(props) {
                   uploadCompletedBilty();
                   return;
             }
-
+            setImages({bill: [], bilty: []})
             uploadBill();
             uploadBilty();
       };
 
       const handleCancel = () => {
             hideModal();
+            setImages({bill: [], bilty: []})
+            
       };
 
       return (
